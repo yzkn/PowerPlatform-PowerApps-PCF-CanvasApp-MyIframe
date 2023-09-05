@@ -19,6 +19,15 @@
         }
       }
     },
+    ".NETFramework,Version=v4.6.2/win-arm64": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.26.6": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
+          "build/Microsoft.PowerApps.MSBuild.Pcf.targets": {}
+        }
+      }
+    },
     ".NETFramework,Version=v4.6.2/win-x64": {
       "Microsoft.PowerApps.MSBuild.Pcf/1.26.6": {
         "type": "package",
@@ -168,6 +177,9 @@
     },
     "runtimes": {
       "win": {
+        "#import": []
+      },
+      "win-arm64": {
         "#import": []
       },
       "win-x64": {

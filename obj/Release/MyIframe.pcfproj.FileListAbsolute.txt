@@ -1,0 +1,2 @@
+C:\Users\Y\Documents\work\PowerPlatform\PCF\MyIframe\obj\Release\MyIframe.pcfproj.AssemblyReference.cache
+C:\Users\Y\Documents\work\PowerPlatform\PCF\MyIframe\obj\Release\MyIframe.pcfproj.CoreCompileInputs.cache
