@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CZogKrsu5uQryoYPFrjiSFGhAEv/l4RNLz4Zgc9XXt8MSrg3/uKAMiaPOV0neThvmUahb6xQo+3IhVL/IKB/KQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Y\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.26.6\\microsoft.powerapps.msbuild.pcf.1.26.6.nupkg.sha512"
+  ],
+  "logs": []
+}

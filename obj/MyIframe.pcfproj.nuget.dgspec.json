@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+        "projectName": "MyIframe",
+        "projectPath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+        "packagesPath": "C:\\Users\\Y\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Y\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
