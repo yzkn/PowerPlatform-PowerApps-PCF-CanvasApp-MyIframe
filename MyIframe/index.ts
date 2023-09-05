@@ -14,8 +14,8 @@ import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
 export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOutputs>
 {
-	// Reference to Bing Map IFrame HTMLElement
-	private _bingMapIFrame: HTMLElement;
+	// Reference to IFrame HTMLElement
+	private _myIframe: HTMLElement;
 
 	// Reference to the control container HTMLDivElement
 	// This element contains all elements of our custom control example
@@ -44,40 +44,34 @@ export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOu
 	public updateView(context: ComponentFramework.Context<IInputs>): void {
 		if (!this._controlViewRendered) {
 			this._controlViewRendered = true;
-			this.renderBingMapIFrame();
+			this.renderIframe();
 		}
 
-		const latitude = context.parameters.latitudeValue.raw;
-		const longitude = context.parameters.longitudeValue.raw;
-		latitude && longitude && this.updateBingMapURL(latitude, longitude);
+		const urlValue = context.parameters.urlValue.raw ?? "https://www.bing.com/";
+		const frameWidth = Number.isInteger(context.parameters.frameWidthValue.raw) ? context.parameters.frameWidthValue.raw : 800;
+		const frameHeight = Number.isInteger(context.parameters.frameHeightValue.raw) ? context.parameters.frameHeightValue.raw : 600;
+		frameWidth && frameHeight && this.updateIframe(urlValue, frameWidth, frameHeight);
 	}
 
 	/**
-	 * Render IFrame HTML Element that hosts the Bing Map and appends the IFrame to the control container
+	 * Render IFrame HTML Element and appends the IFrame to the control container
 	 */
-	private renderBingMapIFrame(): void {
-		this._bingMapIFrame = this.createIFrameElement();
-		this._container.appendChild(this._bingMapIFrame);
+	private renderIframe(): void {
+		this._myIframe = this.createIFrameElement();
+		this._container.appendChild(this._myIframe);
 	}
 
 	/**
-	 * Updates the URL of the Bing Map IFrame to display the updated lat/long coordinates
-	 * @param latitude : latitude of center point of Bing map
-	 * @param longitude : longitude of center point of Bing map
+	 * Updates the URL of the IFrame to display the page of the updated url
+	 * @param url : url of iframe
+	 * @param frameWidth : width of iframe
+	 * @param frameHeight : height of iframe
 	 */
-	private updateBingMapURL(latitude: number, longitude: number): void {
-		// Bing Map API:
-		// https://msdn.microsoft.com/en-us/library/dn217138.aspx
-
-		// Provide bing map query string parameters to format and style map view
-		const bingMapUrlPrefix = "https://www.bing.com/maps/embed?h=400&w=300&cp=";
-		const bingMapUrlPostfix = "&lvl=12&typ=d&sty=o&src=SHELL&FORM=MBEDV8";
-
-		// Build the entire URL with the user provided latitude and longitude
-		const iFrameSrc = `${bingMapUrlPrefix + latitude}~${longitude}${bingMapUrlPostfix}`;
-
+	private updateIframe(url: string, frameWidth: number, frameHeight: number): void {
 		// Update the IFrame to point to the updated URL
-		this._bingMapIFrame.setAttribute("src", iFrameSrc);
+		this._myIframe.setAttribute("src", url);
+		this._myIframe.style.height = frameHeight + "px";
+		this._myIframe.style.width = frameWidth + "px";
 	}
 
 	/**
@@ -86,6 +80,8 @@ export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOu
 	private createIFrameElement(): HTMLElement {
 		const iFrameElement: HTMLElement = document.createElement("iframe");
 		iFrameElement.setAttribute("class", "SampleControl_IFrame");
+		iFrameElement.style.height = "600px";
+		iFrameElement.style.width = "800px";
 		return iFrameElement;
 	}
 
