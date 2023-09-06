@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj": {}
+    "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\MyIframe.pcfproj": {}
   },
   "projects": {
-    "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj": {
+    "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\MyIframe.pcfproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+        "projectUniqueName": "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\MyIframe.pcfproj",
         "projectName": "MyIframe",
-        "projectPath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+        "projectPath": "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\MyIframe.pcfproj",
         "packagesPath": "C:\\Users\\Y\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\obj\\",
+        "outputPath": "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

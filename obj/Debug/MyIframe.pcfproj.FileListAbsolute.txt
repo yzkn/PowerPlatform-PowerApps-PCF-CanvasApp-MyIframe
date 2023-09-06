@@ -1,2 +1,4 @@
 C:\Users\Y\Documents\work\PowerPlatform\PCF\MyIframe\obj\Debug\MyIframe.pcfproj.AssemblyReference.cache
 C:\Users\Y\Documents\work\PowerPlatform\PCF\MyIframe\obj\Debug\MyIframe.pcfproj.CoreCompileInputs.cache
+C:\Users\Y\Documents\GitHub\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\obj\Debug\MyIframe.pcfproj.AssemblyReference.cache
+C:\Users\Y\Documents\GitHub\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\obj\Debug\MyIframe.pcfproj.CoreCompileInputs.cache

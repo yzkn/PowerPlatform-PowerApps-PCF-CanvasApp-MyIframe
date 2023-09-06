@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
   <control namespace="YA" constructor="MyIframe" version="1.1.0" display-name-key="MyIframe_Display_Key" description-key="MyIframe_Desc_Key" control-type="standard">
-    <property name="urlValue" display-name-key="urlValue_Display_Key" description-key="urlValue_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
-    <property name="frameWidthValue" display-name-key="frameWidthValue_Display_Key" description-key="frameWidthValue_Desc_Key" of-type="FP" usage="bound" required="true" />
-    <property name="frameHeightValue" display-name-key="frameHeightValue_Display_Key" description-key="frameHeightValue_Desc_Key" of-type="FP" usage="bound" required="true" />
+    <property name="urlValue" display-name-key="urlValue_Display_Key" description-key="urlValue_Desc_Key" of-type="SingleLine.URL" usage="bound" required="true" />
+    <property name="frameWidthValue" display-name-key="frameWidthValue_Display_Key" description-key="frameWidthValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
+    <property name="frameHeightValue" display-name-key="frameHeightValue_Display_Key" description-key="frameHeightValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
     <resources>
       <code path="index.ts" order="1" />
       <css path="css/MyIframe.css" order="2" />

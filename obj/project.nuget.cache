@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5GcKF2xwqfuQnadicGhneb/B/6mGlij9902/WgtqK4C5O4MncrEVi/vyjbT/yfL+755HxOJtU8NjdWjjab/wMQ==",
+  "dgSpecHash": "g0hnBapYktjkVksYkGMYzA583W/H20wyyAOspVblsJgIqOLE7BeOD9r4+5SX6FnqaA3e0TJWYA6fElfD8N6/Zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Y\\Documents\\work\\PowerPlatform\\PCF\\MyIframe\\MyIframe.pcfproj",
+  "projectFilePath": "C:\\Users\\Y\\Documents\\GitHub\\PowerPlatform-PowerApps-PCF-CanvasApp-MyIframe\\MyIframe.pcfproj",
   "expectedPackageFiles": [
     "C:\\Users\\Y\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.26.6\\microsoft.powerapps.msbuild.pcf.1.26.6.nupkg.sha512"
   ],
