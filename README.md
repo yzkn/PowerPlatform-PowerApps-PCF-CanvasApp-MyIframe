@@ -42,7 +42,7 @@ pac solution add-reference --path ..\
   <!-- -->
 ```
 
-powershell```
+```powershell
 # デバッグ構成で作成する場合
 msbuild /t:build /restore
 
