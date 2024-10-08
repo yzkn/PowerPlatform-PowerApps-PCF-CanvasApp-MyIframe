@@ -1,13 +1,20 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="YA" constructor="MyIframe" version="1.1.0" display-name-key="MyIframe_Display_Key" description-key="MyIframe_Desc_Key" control-type="standard">
-    <property name="urlValue" display-name-key="urlValue_Display_Key" description-key="urlValue_Desc_Key" of-type="SingleLine.URL" usage="bound" required="true" />
-    <property name="frameWidthValue" display-name-key="frameWidthValue_Display_Key" description-key="frameWidthValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
-    <property name="frameHeightValue" display-name-key="frameHeightValue_Display_Key" description-key="frameHeightValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
+  <control namespace="YA" constructor="MyIframe" version="1.1.0"
+    display-name-key="MyIframe_Display_Key" description-key="MyIframe_Desc_Key"
+    control-type="standard">
+    <property name="urlValue" display-name-key="urlValue_Display_Key"
+      description-key="urlValue_Desc_Key" of-type="SingleLine.URL" usage="bound" required="true" />
+    <property name="frameWidthValue" display-name-key="frameWidthValue_Display_Key"
+      description-key="frameWidthValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
+    <property name="frameHeightValue" display-name-key="frameHeightValue_Display_Key"
+      description-key="frameHeightValue_Desc_Key" of-type="Whole.None" usage="bound" required="true" />
+    <property name="latlonValue" display-name-key="latlon_Display_Key"
+      description-key="latlon_Desc_Key" of-type="SingleLine.Text" usage="output" />
     <resources>
       <code path="index.ts" order="1" />
       <css path="css/MyIframe.css" order="2" />
-      <resx path="strings/MyIframe.1033.resx" version="1.0.0"/>
+      <resx path="strings/MyIframe.1033.resx" version="1.0.0" />
     </resources>
   </control>
 </manifest>

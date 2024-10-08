@@ -12,8 +12,9 @@
 
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 
-export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOutputs>
-{
+export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOutputs> {
+	private latlon: String = "";
+
 	// Reference to IFrame HTMLElement
 	private _myIframe: HTMLElement;
 
@@ -79,6 +80,7 @@ export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOu
 	 */
 	private createIFrameElement(): HTMLElement {
 		const iFrameElement: HTMLElement = document.createElement("iframe");
+		iFrameElement.setAttribute("id", "SampleControl_IFrame");
 		iFrameElement.setAttribute("class", "SampleControl_IFrame");
 		iFrameElement.style.height = "600px";
 		iFrameElement.style.width = "800px";
@@ -91,7 +93,8 @@ export class MyIframe implements ComponentFramework.StandardControl<IInputs, IOu
 	 */
 	public getOutputs(): IOutputs {
 		// no-op: method not leveraged by this example custom control
-		return {};
+		const iFrameElement: HTMLElement = document.getElementById("SampleControl_IFrame")!;
+		return { "latlonValue": iFrameElement.getAttribute("src") ?? "" };
 	}
 
 	/**
